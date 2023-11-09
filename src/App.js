@@ -1,12 +1,12 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Counter from './components/counter/Counter';
-import MyComponent from './components/practice-components/MyComponent';
+import Todo from './components/todo/Todo'
+import './bootstrap.css'
 
 function App() {
   return (
     <div className="App">
-      <Counter />
+      <Todo></Todo>
     </div>
   );
 }

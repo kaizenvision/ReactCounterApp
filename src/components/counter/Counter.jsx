@@ -1,4 +1,5 @@
 import { Component } from "react";
+import './Counter.css'
 
 class Counter extends Component{
     constructor(){
@@ -33,28 +34,15 @@ class Counter extends Component{
 
 class CounterButton extends Component{
 
-    constructor(){
-        super();
-       
-
-        this.increment = this.increment.bind(this)
-    }
-
+  
     render(){
         return (
             <div className="counter">
-                <button onClick={this.increment}>+{this.props.by}</button>
+                <button onClick={() => this.props.incrementMethod(this.props.by)}>+{this.props.by}</button>
            
             </div>
         )
     }
-
-    increment(){
-       
-
-        this.props.incrementMethod(this.props.by);
-    }
-
     
 }
 
